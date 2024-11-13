@@ -48,7 +48,7 @@ def get_timer_seconds(context: ContextTypes.DEFAULT_TYPE) -> int:
     if not context.args:
         raise AttributeError("Time duration is not provided")
 
-    time_str = context.args[0][:len(context.args) - 1]
+    time_str = context.args[0][:len(context.args[0]) - 1]
     measure = context.args[0][-1]
 
     try:
